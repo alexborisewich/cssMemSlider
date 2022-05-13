@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Slackey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Slackey&display=swap");
 
 * {
   margin: 0;
@@ -124,10 +124,8 @@ input {
   display: inline-block;
   vertical-align: middle;
   width: calc(100% / 6);
-  font-family: "Rubik Mono One", sans-serif;
-  font-size: calc(13rem + 7 * (100vw - 320rem) / (1300 - 320));
+  font-size: calc(14rem + 7 * (100vw - 320rem) / (1300 - 320));
   color: rgb(255, 255, 255);
-  padding: 0 calc(5rem + 5 * (100vw - 320rem) / (1300 - 320));
 }
 
 .arrow {
@@ -211,7 +209,17 @@ input {
 #item4:checked ~ .slider__image-wrapper .slider__images .slider__image0,
 #item5:checked ~ .slider__title-wrapper .slider__titles .slider__title0,
 #item5:checked ~ .slider__image-wrapper .slider__images .slider__image0 {
-  display: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+#item1:checked ~ .slider__title-wrapper .slider__titles .slider__title0 .arrow,
+#item2:checked ~ .slider__title-wrapper .slider__titles .slider__title0 .arrow,
+#item3:checked ~ .slider__title-wrapper .slider__titles .slider__title0 .arrow,
+#item4:checked ~ .slider__title-wrapper .slider__titles .slider__title0 .arrow,
+#item5:checked ~ .slider__title-wrapper .slider__titles .slider__title0 .arrow {
+  border: none;
 }
 
 #start:checked ~ .slider__image-wrapper .slider__images,
@@ -338,7 +346,7 @@ input {
       transform: translate(0, 0);
     }
     to {
-      transform: translate(5rem, -5rem);
+      transform: translate(5rem, -3rem);
     }
   }
 }
