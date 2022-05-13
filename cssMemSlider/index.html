@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Mem Slider</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/slyle.css" />
+  </head>
+  <body>
+    <div class="wrappper">
+      <header class="header">
+        <h1 class="header__title">CSS Mem Slider</h1>
+      </header>
+      <main class="main">
+        <div class="slider">
+          <input type="radio" id="start" name="start" checked />
+          <input type="radio" id="item1" name="dot" />
+          <input type="radio" id="item2" name="dot" />
+          <input type="radio" id="item3" name="dot" />
+          <input type="radio" id="item4" name="dot" />
+          <input type="radio" id="item5" name="dot" />
+          <div class="slider__image-wrapper">
+            <div class="slider__images">
+              <div class="slider__image0 slide"></div>
+              <div class="slider__image1 slide"></div>
+              <div class="slider__image2 slide"></div>
+              <div class="slider__image3 slide"></div>
+              <div class="slider__image4 slide"></div>
+              <div class="slider__image5 slide"></div>
+            </div>
+          </div>
+          <div class="slider__title-wrapper">
+            <div class="slider__titles">
+              <p class="slider__title0 title">
+                Let's go! <span class="arrow"></span>
+              </p>
+              <p class="slider__title1 title">
+                Когда фронтенд готов раньше бекенда.
+              </p>
+              <p class="slider__title2 title">
+                <code>.mask {position:absolute; top:0;}</code>
+              </p>
+              <p class="slider__title3 title">
+                Когда ищешь баг в собственном коде.
+              </p>
+              <p class="slider__title4 title">Душ активного юзера GitHub.</p>
+              <p class="slider__title5 title">Когда попросили пофиксить.</p>
+            </div>
+          </div>
+          <div class="slider__buttons-wrapper">
+            <label class="slider__button0 btn" for="start"
+              ><span class="false-radio"></span
+            ></label>
+            <label class="slider__button1 btn" for="item1"
+              ><span class="false-radio"></span
+            ></label>
+            <label class="slider__button2 btn" for="item2"
+              ><span class="false-radio"></span
+            ></label>
+            <label class="slider__button3 btn" for="item3"
+              ><span class="false-radio"></span
+            ></label>
+            <label class="slider__button4 btn" for="item4"
+              ><span class="false-radio"></span
+            ></label>
+            <label class="slider__button5 btn" for="item5"
+              ><span class="false-radio"></span
+            ></label>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
